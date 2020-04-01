@@ -19,10 +19,13 @@ print "I said: %r." % x
 # will 
 print "I also said: '%s'." % y
 
+# assign boolean value to var
 hilarious = False
+whiny_cat = True
+
 joke_evaluation = "Isn't that joke so funny?! %r"
 
-print joke_evaluation % hilarious
+print joke_evaluation % whiny_cat
 
 w = "This is the left side of..."
 e = "a string with a right side."
