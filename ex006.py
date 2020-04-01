@@ -13,7 +13,10 @@ y = "Those who know %s and those %s." % (binary, do_not)
 print x
 print y
 
+# will interpolate x in r's place
 print "I said: %r." % x
+
+# will 
 print "I also said: '%s'." % y
 
 hilarious = False
@@ -25,3 +28,8 @@ w = "This is the left side of..."
 e = "a string with a right side."
 
 print w + e
+
+# Looking at the difference between str and repr
+s = 'spam maam'
+print str(s)
+print repr(s)
