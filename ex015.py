@@ -4,8 +4,8 @@ script, filename = argv
 
 txt = open(filename)
 
-print (("Here's the first line of your file %r:" % filename))
-print (txt.readline())
+print(("Here's the first line of your file %r:" % filename))
+print(txt.readline())
 
 # print ("Type the filename again:")
 # file_again = input("> ")
