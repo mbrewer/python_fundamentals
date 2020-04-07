@@ -13,4 +13,9 @@ x = int(raw_input())
 
 print "Thanks for x, which was", x
 
+print "Please give me y"
+y = int(raw_input())
+
+print "Thanks for y, which was %s" %y
+
 
