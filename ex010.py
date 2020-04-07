@@ -9,14 +9,14 @@ I'll do a list:
 \t* Catnip\n\t* Grass
 """
 
-print tabby_cat
-print persian_cat
-print backslash_cat
-print fat_cat
+print(tabby_cat)
+print(persian_cat)
+print(backslash_cat)
+print(fat_cat)
 
-print "I am 6'2\" tall."
-print 'I am 6\'2" tall.'
-print "I am 6'2 tall."
+print("I am 6'2\" tall.")
+print('I am 6\'2" tall.')
+print("I am 6'2 tall.")
 
 # while True:
 # 	for i in ["/","=","|","\\","|"]:
@@ -29,8 +29,8 @@ neck_sore_level = "high \f"
 
 bell_sounds = "ha\bha\bha\bha"
 
-print hunger_level
-print confusion_level
-print back_sore_level
-print neck_sore_level
-print bell_sounds * 3
+print(hunger_level)
+print(confusion_level)
+print(back_sore_level)
+print(neck_sore_level)
+print(bell_sounds * 3)

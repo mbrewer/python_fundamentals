@@ -1,21 +1,25 @@
-print "How old are you?"
-age = raw_input()
-print "How tall are you?",
-height = raw_input()
-print "How much do you weigh?",
-weight = raw_input()
+print("How old are you?"),
+age = input()
 
-print "So, you're %r old, %r tall and %r heavy." % (
-	age, height, weight)
+print("How tall are you?"),
+height = input()
 
-print "Please give me x"
-x = int(raw_input())
+print("How much do you weigh?"),
+weight = input()
 
-print "Thanks for x, which was", x
+print("So, you're %r old, %r tall and %r heavy." % (
+	age, height, weight))
 
-print "Please give me y"
-y = int(raw_input())
+print("Please give me x")
+x = int(input())
 
-print "Thanks for y, which was %s" %y
+print("Thanks for x, which was %d" % x)
+print(type(x))
+
+print("Please give me y")
+y = int(input())
+print(type(y))
+
+print("Thanks for y, which was %s" %y)
 
 
