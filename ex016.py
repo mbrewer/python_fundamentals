@@ -39,13 +39,12 @@ print("I'm going to write these to the file.")
 
 # Refactor using strings, formats and escapes to print out lines 1 - 3 with 1 target.write()
 # file_lines = {line1, line2, line3}
-new_file = target.write("%s\n%s\n%s" % (line1, line2, line3))
+target.write("%s\n%s\n%s" % (line1, line2, line3)) # a way to shortcut the fact that write() only allows one arg
 
 # Write a script similar to the last exerise that uses read and argv to read the file you just created
-print(type(new_file))
-script = open(new_file, 'a')
+hiya = open("test.txt", 'a')
 print("Are you reading this?")
-print(script.read())
+print(hiya.read())
 print("How about now?")
 
 # Close the file
