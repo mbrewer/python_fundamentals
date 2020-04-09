@@ -30,4 +30,15 @@ elif door == "2":
 		print("The insanity rots your eyes into a pool of muck. Good job!")
 
 else:
-	print("You stumble around and fall on a knife and die. Good job!")
+	print("You realize that the doors were false choices and you keep going down the tunnel. \nCongrats on being woke!")
+	print("It's so dark in here. Which one of these do you have in your pocket?")
+	print("1. A match.")
+	print("2. A candle.")
+	print("3. An oil lantern.")
+
+	cool_item = input("> ")
+
+	if cool_item == "2" or cool_item == "3":
+		print("You don't have a match! Damnit. You trip and plummet off a tunnel cliff. Goodbye!")
+	else:
+		print("Great! You've got a match. Now keep it lit.")
