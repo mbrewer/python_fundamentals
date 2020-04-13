@@ -4,10 +4,11 @@ def gold_room():
 	print("This room is full of gold. How much do you take?")
 
 	next = input("> ")
-	if "0" in next or "1" in next:
+	
+	try:
 		how_much = int(next)
-	else:
-		dead("Man, learn to type a number.")
+	except ValueError:
+		dead("You didn't steal quickly enough and the guards caught you!")
 
 	if how_much <= 5000:
 		print("Nice, you didn't take it all and anger the gods! You win.")
@@ -34,8 +35,6 @@ def bear_room():
 		elif next == "2" and not bear_moved:
 			print("The bear has moved from the door. Open it!")
 			bear_moved = True
-		elif next == "2" and bear_moved:
-			dead("The bear gets pissed off and chews your leg off.")
 		elif next == "3" and bear_moved:
 			gold_room()
 		else:
