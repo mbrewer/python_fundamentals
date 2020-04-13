@@ -9,8 +9,8 @@ def gold_room():
 	else:
 		dead("Man, learn to type a number.")
 
-	if how_much < 50:
-		print("Nice, you're not greedy! You win.")
+	if how_much <= 5000:
+		print("Nice, you didn't take it all and anger the gods! You win.")
 		exit(0)
 	else:
 		dead("You greedy goblin!")
@@ -21,41 +21,46 @@ def bear_room():
 	print("The bear has a bunch of honey.")
 	print("The fat bear is in front of another door.")
 	print("How are you going to move the bear?")
+	print("1. Take his honey")
+	print("2. Taunt the bear")
+	print("3. Open door")
 	bear_moved = False
 
 	while True:
 		next = input("> ")
 
-		if next == "take honey":
+		if next == "1":
 			dead("The bear looks at you then slaps your face off.")
-		elif next == "taunt bear" and not bear_moved:
-			print("The bear has moved from the door. You can go through it now.")
+		elif next == "2" and not bear_moved:
+			print("The bear has moved from the door. Open it!")
 			bear_moved = True
-		elif next == "taunt bear" and bear_moved:
+		elif next == "2" and bear_moved:
 			dead("The bear gets pissed off and chews your leg off.")
-		elif next == "open door" and bear_moved:
+		elif next == "3" and bear_moved:
 			gold_room()
 		else:
-			print("I got no idea what that means.")
+			print("I got no idea what that means. Try again.")
 
 
-def clthulu_room():
+def clhulhu_room():
 	print("Here you see the great evil Cthulu.")
 	print("He, it, whatever stares at you and you go insane.")
 	print("Do you flee for your life or eat your head?")
+	print("1. Flee")
+	print("2. Stay")
 
 	next = input("> ")
 
-	if "flee" in next:
+	if "1" in next:
 		start()
-	elif "head" in next:
-		dead("Well that was tasty!")
+	elif "2" in next:
+		dead("Gross!!!")
 	else:
 		clthulu_room()
 
 
 def dead(why):
-	print(why, "Good job!")
+	print(why, "Ya dead!")
 	exit(0)
 
 def start():
@@ -68,7 +73,7 @@ def start():
 	if next == "left":
 		bear_room()
 	elif next == "right":
-		clthulu_room()
+		cthulhu_room()
 	else:
 		dead("You stumble around the room until you starve.")
 
